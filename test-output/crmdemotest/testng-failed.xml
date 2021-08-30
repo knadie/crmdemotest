@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [crmdemotest]">
+  <test thread-count="5" name="crm test casses(failed)">
+    <classes>
+      <class name="com.crm.qa.tests.homepagetest">
+        <methods>
+          <include name="verifyhomepagetest"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="verifyusernamelabletest"/>
+          <include name="clickoncompaniestest"/>
+          <include name="clickoncontacttest"/>
+        </methods>
+      </class> <!-- com.crm.qa.tests.homepagetest -->
+      <class name="com.crm.qa.tests.contactpagetest">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="selectcheckboxtest"/>
+          <include name="verifycontactpagetest"/>
+        </methods>
+      </class> <!-- com.crm.qa.tests.contactpagetest -->
+      <class name="com.crm.qa.tests.loginpagetest">
+        <methods>
+          <include name="loginpagetitletest"/>
+          <include name="logintest"/>
+          <include name="crmlogotest"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.crm.qa.tests.loginpagetest -->
+    </classes>
+  </test> <!-- crm test casses(failed) -->
+</suite> <!-- Failed suite [crmdemotest] -->
